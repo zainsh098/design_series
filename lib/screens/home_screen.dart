@@ -8,13 +8,26 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey.shade200,
       appBar: AppBar(
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 15,bottom: 20),
+            child: IconButton(onPressed: () {
+
+            }, icon: Icon(Icons.dark_mode_outlined)),
+          ),
+
+
+        ],
+
         toolbarHeight: 90,
         leadingWidth: 120,
-        backgroundColor: Colors.white,
-        elevation: 4,
+        backgroundColor:Colors.white,
+        elevation: 2,
         leading: Column(
           children: [
             Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 IconButton(
                   onPressed: () {
@@ -25,6 +38,8 @@ class HomeScreen extends StatelessWidget {
                     size: 20,
                   ),
                 ),
+
+
               ],
             ),
             const SizedBox(
@@ -250,9 +265,26 @@ class HomeScreen extends StatelessWidget {
 
 
 
+
+
                   ],
                 ),
               ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Expanded(
+                  child: ListTile(
+                    leading: Icon(Icons.logout_outlined),
+                    title: Text(
+                      'Sign out',
+                      style: TextStyle(
+                        fontSize: 17,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  )),
             ),
           ],
         ),
