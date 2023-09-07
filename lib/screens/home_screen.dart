@@ -173,6 +173,83 @@ class HomeScreen extends StatelessWidget {
                         color: Colors.grey.shade700,
                       ),
                     )),
+
+                  ],
+                ),
+              ),
+            ),
+
+
+
+
+
+
+
+
+            SizedBox(height: 10,),
+            Padding(
+              padding: const EdgeInsets.only(left: 20, top: 10),
+              child: Text(
+                'Legal',
+                style: TextStyle(
+                  fontSize: 17,
+                  color: Colors.grey.shade600,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ),
+            SizedBox(height: 10,),
+            Padding(
+              padding: const EdgeInsets.only(left: 15, right: 15),
+              child: Container(
+                height: 150,
+                width: 380,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Column(
+                  children: [
+                    Expanded(
+                        child: ListTile(
+                          leading: Icon(Icons.file_present_rounded),
+                          title: Text(
+                            'Data Privacy Terms',
+                            style: TextStyle(
+                              fontSize: 17,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          trailing: Icon(
+                            Icons.arrow_forward_ios_outlined,
+                            size: 20,
+                            color: Colors.grey.shade700,
+                          ),
+                        )),
+                    Divider(
+                      color: Colors.grey.shade300,
+                      endIndent: 10,
+                      indent: 10,
+                      height: 10,
+                    ),
+                    Expanded(
+                        child: ListTile(
+                          leading: Icon(Icons.file_present_outlined),
+                          title: Text(
+                            'Terms and Conditions',
+                            style: TextStyle(
+                              fontSize: 17,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        )),
+                    SizedBox(height: 15,),
+
+
+
+
                   ],
                 ),
               ),
